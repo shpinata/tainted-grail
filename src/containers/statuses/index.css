@@ -1,0 +1,21 @@
+.statusesDiv-List {
+    width: 33.33%;
+}
+
+#statusesDiv {
+    display: flex;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#firstDiv {
+    margin-bottom: 50px;
+}
+
+#firstDiv > div:nth-child(1) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

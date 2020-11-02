@@ -1,0 +1,29 @@
+.statuses-ItemDiv {
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    border-bottom: black dotted 1px;
+
+}
+
+.statuses-ItemDiv .name{
+    width: 55%;
+}
+
+.statuses-Item-CheckboxDiv {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.additionalText {
+    font-size: 10px;
+    padding-left: 25px;
+}
+
+button {
+    width: 23px;
+    height: 21px;
+}

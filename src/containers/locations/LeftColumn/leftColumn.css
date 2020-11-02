@@ -1,0 +1,23 @@
+.left-column-item {
+    width: 100%;
+    display: flex;
+    
+}
+
+.locationDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.locationDiv > div:nth-child(1) {
+    display: flex;    
+}
+
+.inputDiv {
+
+    display: flex;
+}
+
+.inputDiv input {
+    width: 150px;
+}

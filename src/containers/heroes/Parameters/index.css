@@ -1,0 +1,8 @@
+.parameters {
+    display: flex;
+}
+
+.parameters-characteristic input {
+    height: 72px;
+    width: 35px;
+}

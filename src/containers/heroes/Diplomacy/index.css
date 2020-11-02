@@ -1,0 +1,8 @@
+.diplomacy-characteristic {
+    display: flex;
+}
+
+.diplomacy-characteristic input {
+    height: 36px;
+    width: 62px;
+}
