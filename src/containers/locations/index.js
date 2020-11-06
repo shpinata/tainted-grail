@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import LeftColumn from './LeftColumn';
+import RightColumn from './RightColumn';
 
 const Locations = () => (
   <div className="locations-container">
@@ -9,9 +10,9 @@ const Locations = () => (
     </div>
     <div>
       <LeftColumn />  
-      <div className="right-column"></div>  
+      <RightColumn />  
     </div>
   </div>
 );
 
-export default Locations
+export default Locations;

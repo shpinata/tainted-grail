@@ -4,11 +4,11 @@ import Location from './Location';
 const Guardians = props => (
     <div className="left-column-item">
         <div className="headerDiv">
-            <div>Локация</div>
-            <div>Тип стража</div>
+            <div>Страж 1</div>
+            <div>Страж 2</div>
         </div>
-        <Location name="Страж 1" number="2"/>
-        <Location name="Страж 2" number="2"/>
+        <Location name="Локация" number="2"/>
+        <Location name="Тип стража" number="2"/>
     </div>
 );
 

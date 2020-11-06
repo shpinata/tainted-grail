@@ -1,0 +1,8 @@
+.right-column {
+    width: 50%;
+    display: flex;
+}
+
+.column-item input {
+    width: 40%;
+}

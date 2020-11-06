@@ -7,15 +7,13 @@
     margin-bottom: 50px;
 }
 
+.locations-container > div:nth-child(2) {
+    display: flex;
+}
+
 h1 {
     display: flex;
     justify-content: center;
-}
-
-.left-column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
 }
 
 
