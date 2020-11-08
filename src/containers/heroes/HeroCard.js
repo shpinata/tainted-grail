@@ -5,15 +5,35 @@ import Diplomacy from './Diplomacy';
 import Parameters from './Parameters';
 import Resources from './Resources';
 
-const HeroCard = props => (
+const HeroCard = ({heroes, updateHero, ...props}) => (
     <div className="firstDivHeroCard">
-        <HeroCardHeader />
+        <HeroCardHeader
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero} 
+        />
         <div className="characteristics">
-            <Battle />
-            <Parameters />
-            <Diplomacy />
+            <Battle 
+                number={props.number} 
+                heroes={heroes} 
+                updateHero={updateHero} 
+            />
+            <Parameters 
+                number={props.number} 
+                heroes={heroes} 
+                updateHero={updateHero} 
+            />
+            <Diplomacy 
+                number={props.number} 
+                heroes={heroes} 
+                updateHero={updateHero} 
+            />
         </div>
-        <Resources />
+        <Resources 
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero} 
+        />
     </div>
 );
 

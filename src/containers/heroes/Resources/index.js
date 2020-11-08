@@ -2,13 +2,38 @@ import React from 'react';
 import ResourcesInput from './ResourcesInput';
 import './index.css';
 
-const Resources = props => (
+const Resources = ({heroes, updateHero, ...props}) => (
     <div className="resources">
-        <ResourcesInput text="Еда" />
-        <ResourcesInput text="Золото" />
-        <ResourcesInput text="Слава" />
-        <ResourcesInput text="Опыт" />
-        <ResourcesInput text="Магия" />
+        <ResourcesInput 
+            text="Еда" 
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
+        <ResourcesInput 
+            text="Золото" 
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
+        <ResourcesInput 
+            text="Слава" 
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
+        <ResourcesInput 
+            text="Опыт" 
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
+        <ResourcesInput 
+            text="Магия" 
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
     </div>
 );
 

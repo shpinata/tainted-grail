@@ -5,11 +5,29 @@ import careful from './img/careful.png';
 import spiritual from './img/spiritual.png';
 import './index.css'
 
-const Diplomacy = props => (
+const Diplomacy = ({heroes, updateHero, ...props}) => (
     <div className="diplomacy">
-        <Characteristics img={kind}/>
-        <Characteristics img={careful}/>
-        <Characteristics img={spiritual}/>
+        <Characteristics 
+            img={kind}
+            diplomacyKey="kind"
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
+        <Characteristics 
+            img={careful}
+            diplomacyKey="careful"
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
+        <Characteristics 
+            img={spiritual}
+            diplomacyKey="spiritual"
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
     </div>
 );
 

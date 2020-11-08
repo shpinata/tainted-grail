@@ -5,11 +5,29 @@ import bravery from './img/bravery.png';
 import dexterity from './img/dexterity.png';
 import './index.css'
 
-const Battle = props => (
+const Battle = ({heroes, updateHero, ...props}) => (
     <div className="battle">
-        <Characteristics img={rage}/>
-        <Characteristics img={bravery}/>
-        <Characteristics img={dexterity}/>
+        <Characteristics 
+            battleKey="rage" 
+            img={rage}
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
+        <Characteristics 
+            battleKey="bravery" 
+            img={bravery}
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
+        <Characteristics 
+            battleKey="dexterity" 
+            img={dexterity}
+            number={props.number}
+            heroes={heroes} 
+            updateHero={updateHero}
+        />
     </div>
 );
 
