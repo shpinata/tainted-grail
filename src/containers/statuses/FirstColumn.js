@@ -1,37 +1,97 @@
 import React from 'react';
 import './index.css';
-import StatusesChekbox from './StatusesChekbox';
-import StatusesNumber from './StatusesNumber';
+import Statuses from './Statuses';
 
-const FirstColumn = props => (
-    <div className="statusesDiv-List">
-        <StatusesChekbox text="Ветры искаженья" />
-        <StatusesChekbox text="Возвращение" />
-        <StatusesNumber text="Война за Авалон" size="4"/>
-        <StatusesNumber text="Восстановление ордена" size="8" />
-        <div className="additionalText">Получив любые 6 частей, см. строфу 512 в книге секретов.</div>
-        <StatusesNumber text="Враги Авалона" size="3"/>
-        <StatusesNumber text="Выжившие" size="5"/>
-        <StatusesChekbox text="Глубокая тайна" />
-        <StatusesNumber text="Гнетущее открытие" size="3"/>
-        <StatusesNumber text="Грёзы и пророчества" size="8"/>
-        <StatusesNumber text="Дипломат" size="3"/>
-        <StatusesNumber text="Дипломатическая миссия" size="6"/>
-        <StatusesChekbox text="Добыча охотника" />
-        <StatusesChekbox text="Жгучее желание" />
-        <StatusesNumber text="Загадки на краю света" size="5"/>
-        <StatusesNumber text="Закат рыцарства" size="8"/>
-        <div className="additionalText">Получив любые 6 частей, см. строфу 525 в книге секретов.</div>        
-        <StatusesChekbox text="Защита святыни" />
-        <StatusesChekbox text="Защитник народа" />
-        <StatusesChekbox text="Иждивенец" />
-        <StatusesNumber text="Интриги на Полпути" size="3"/>
-        <StatusesChekbox text="Искупление" size="5" />
-        <StatusesChekbox text="Искупление червяка" />
-        <StatusesNumber text="Исследование Туатана" size="5"/>
-        <StatusesNumber text="Клад" size="8"/>
-        <StatusesChekbox text="Конец пути" />
-    </div>
-);
+const FirstColumn = () => {
+    return (
+        <div className="statusesDiv-List">
+            <Statuses text="Ветры искаженья" />
+            <Statuses text="Возвращение" />
+            <Statuses
+                text="Война за Авалон"
+                size="4"
+                numbered
+            />
+            <Statuses
+                text="Восстановление ордена"
+                size="8"
+                numbered
+            />
+            <div className="additionalText">
+                Получив любые 6 частей, см. строфу 512 в книге секретов.
+            </div>
+            <Statuses
+                text="Враги Авалона"
+                size="3"
+                numbered
+            />
+            <Statuses
+                text="Выжившие"
+                size="5"
+                numbered
+            />
+            <Statuses text="Глубокая тайна" />
+            <Statuses
+                text="Гнетущее открытие"
+                size="3"
+                numbered
+            />
+            <Statuses
+                text="Грёзы и пророчества"
+                size="8"
+                numbered
+            />
+            <Statuses
+                text="Дипломат"
+                size="3"
+                numbered
+            />
+            <Statuses
+                text="Дипломатическая миссия"
+                size="6"
+                numbered
+            />
+            <Statuses text="Добыча охотника" />
+            <Statuses text="Жгучее желание" />
+            <Statuses
+                text="Загадки на краю света"
+                size="5"
+                numbered
+            />
+            <Statuses
+                text="Закат рыцарства"
+                size="8"
+                numbered
+            />
+            <div className="additionalText">
+                Получив любые 6 частей, см. строфу 525 в книге секретов.
+            </div>
+            <Statuses text="Защита святыни" />
+            <Statuses text="Защитник народа" />
+            <Statuses text="Иждивенец" />
+            <Statuses
+                text="Интриги на Полпути"
+                size="3"
+                numbered
+            />
+            <Statuses
+                text="Искупление"
+                size="5"
+            />
+            <Statuses text="Искупление червяка" />
+            <Statuses
+                text="Исследование Туатана"
+                size="5"
+                numbered
+            />
+            <Statuses
+                text="Клад"
+                size="8"
+                numbered
+            />
+            <Statuses text="Конец пути" />
+        </div>
+    );
+}
 
 export default FirstColumn;

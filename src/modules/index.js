@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import counter from './counter'
+import statuses from './statuses'
 import locations from './locations'
 
 export default combineReducers({
-  counter,
+  statuses,
   locations
 })
