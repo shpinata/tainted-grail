@@ -1,21 +1,74 @@
-.headingDiv {
-    margin-top: 50px;
+.container {
+    background-color: #f5eee3;
+    padding-top: 40px; 
+    padding-bottom: 20px;  
+}
+
+.HeroCard {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
-.firstDiv {
-    display: flex;
+.border-container {
+    padding: 40px;
     
+    /*margin: 20px;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;*/
 }
 
-.firstDivHeroCard {
-    margin: 20px;
+.border-top, 
+.border-bottom {
+  border: 3px solid #AF8B52;
+  height: 12px;
+  position: relative;
 }
+
+.border-top:before, 
+.border-top:after, 
+.border-bottom:before, 
+.border-bottom:after {
+  content: "";
+  position: absolute;
+  border: 3px solid #AF8B52;
+  width: 20px;
+  height: 20px;
+}
+
+.border-top:before {
+    border-radius: 0 99%;
+    left: -20px;
+    top: -20px;
+  }
+  .border-top:after {
+    border-radius: 99% 0;
+    right: -20px;
+    top: -20px;
+  }
+  .border-bottom:before {
+    border-radius: 99% 0;
+    left: -20px;
+    bottom: -20px;
+  }
+  .border-bottom:after {
+    border-radius: 0 99%;
+    right: -20px;
+    bottom: -20px;
+  }
+  .border-center {
+    border-left: 3px solid #AF8B52;
+    border-right: 3px solid #AF8B52;
+  }
+
 
 .header-name {
-    width: 300px;
+    width: 301px;
     height: 60px;
-    border: black solid 1px;
+    border-bottom: #AF8B52 solid 1px;
+    /*border-right: black solid 1px;*/
     display: flex;
 }
 
@@ -34,6 +87,11 @@
 
 .name input {
     width: 70%;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: #AF8B52 solid 1px;
+    border-radius: 3px;
 }
 
 .location-counter {
@@ -48,6 +106,8 @@
 
 .location input {
     width: 50%;
+    border: #AF8B52 solid 1px;
+    border-radius: 3px;
 }
 
 .counter {
@@ -57,14 +117,22 @@
 
 .counter input {
     width: 50%;
+    border: #AF8B52 solid 1px;
+    border-radius: 3px;
 }
 
 .characteristics {
     display: flex;
-    width: 300px;
-    height: 110px;
-    border: black solid 1px;
-    justify-content: center;
+}
+
+.clear {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+.clear button {
+    height: 30px;
+    width: 120px;
 }
 
 

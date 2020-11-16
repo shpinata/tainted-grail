@@ -1,23 +1,29 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import Heroes from '../heroes';
 import Locations from '../locations';
 import Statuses from '../statuses';
-import './index.css'
+import './index.css';
+import logo from './logo.png';
 
 const App = () => (
   <div>
     <header>
-      <div id="heroes">
-        <Link to="/">Герои</Link>  
+      <div className="logo">
+        <img src={logo} alt=""/>
+      </div>        
+      <div className="links">
+        <div id="heroes">
+          <NavLink exact to="/">Герои</NavLink>  
+        </div>
+        <div id="locations">
+          <NavLink to="/locations">Локации</NavLink>  
+        </div>
+        <div id="statuses">
+          <NavLink to="/statuses">Достижения</NavLink>  
+        </div>          
       </div>
-      <div id="locations">
-        <Link to="/locations">Локации</Link>  
-      </div>
-      <div id="statuses">
-        <Link to="/statuses">Достижения</Link>  
-      </div>
-    </header>
+    </header>      
 
     <main>
       <Route exact path="/" component={Heroes} />

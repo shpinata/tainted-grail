@@ -2,19 +2,21 @@ import React from 'react';
 import HeroCard from './HeroCard';
 import './HeroCard.css';
 import { connect } from 'react-redux';
-import { updateHero } from '../../modules/heroes';
+import { updateHero, cleanHero } from '../../modules/heroes';
 
-const Heroes = ({heroes, updateHero}) => (
-  <div>
-    <div className="headingDiv">
-      <h1>ГЕРОИ</h1>  
-    </div>
-    <div className='firstDiv'>
+const Heroes = ({heroes, updateHero, cleanHero}) => (
+  <div className="container">
+    <div className='HeroCard'>
       <HeroCard number="0" heroes={heroes} updateHero={updateHero}/>  
-      <HeroCard number="1" heroes={heroes} updateHero={updateHero}/>  
+      <HeroCard number="1" heroes={heroes} updateHero={updateHero}/>        
+    </div>  
+    <div className='HeroCard'>
       <HeroCard number="2" heroes={heroes} updateHero={updateHero}/>  
       <HeroCard number="3" heroes={heroes} updateHero={updateHero}/>       
-    </div>        
+    </div>     
+    <div className="clear">
+      <button onClick={cleanHero}>Очистить</button> 
+    </div>  
   </div>
 )
 
@@ -23,7 +25,8 @@ const mapStateToProps = ({ hero }) => ({
 })
 
 const mapDispatchToProps = {
-  updateHero: updateHero,
+  updateHero,
+  cleanHero
 };
 
 

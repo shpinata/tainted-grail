@@ -1,8 +1,14 @@
 .battle-characteristic {
     display: flex;
+    border-bottom: solid 1px #AF8B52;
+    border-right: solid 1px #AF8B52;
+
 }
 
 .battle-characteristic input {
     height: 36px;
-    width: 62px;
+    width: 61px;
+    border: none;
+    text-align: center;
+    font-size: 25px;
 }

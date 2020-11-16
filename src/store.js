@@ -3,12 +3,22 @@ import { connectRouter, routerMiddleware } from 'connected-react-router'
 import thunk from 'redux-thunk'
 import * as History from 'history'
 import rootReducer from './modules'
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
 
 export const history = History.createBrowserHistory()
 
 const initialState = {}
 const enhancers = []
 const middleware = [thunk, routerMiddleware(history)]
+
+const persistConfig = {
+  key: 'root',
+  storage,
+  whitelist: ['statuses', 'locations', 'hero'] 
+}
+
+const persistedReducer = persistReducer(persistConfig, connectRouter(history)(rootReducer))
 
 if (process.env.NODE_ENV === 'development') {
   const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION__
@@ -23,8 +33,12 @@ const composedEnhancers = compose(
   ...enhancers
 )
 
-export default createStore(
-  connectRouter(history)(rootReducer),
+const store = createStore(
+  persistedReducer,
   initialState,
   composedEnhancers
-)
+);
+
+export const persistor = persistStore(store)
+
+export default store;

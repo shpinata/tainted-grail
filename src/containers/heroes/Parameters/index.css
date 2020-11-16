@@ -2,7 +2,15 @@
     display: flex;
 }
 
+.parameters-characteristic {
+    border-bottom: solid 1px #AF8B52;
+    border-right: solid 1px #AF8B52;
+}
+
 .parameters-characteristic input {
-    height: 72px;
+    height: 74px;
     width: 35px;
+    border: none;
+    text-align: center;
+    font-size: 25px;
 }

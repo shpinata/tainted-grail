@@ -1,7 +1,7 @@
 export const UPDATE_HERO = 'locations/UPDATE_HERO'; 
 
 const initialState = {
-    heroes: []
+  heroes: []
 };
 
 export default (state = initialState, action) => {
@@ -18,15 +18,22 @@ export default (state = initialState, action) => {
 };
 
 export const updateHero = (index, name, value, heroes) => { 
-    const copy = [...heroes];
-    if (!copy[index]) { 
-        copy[index] = {};
-    } 
-    const obj = copy[index];
-    obj[name] = value;
+  const copy = [...heroes];
+  if (!copy[index]) { 
+    copy[index] = {};
+  } 
+  const obj = copy[index];
+  obj[name] = value;
 
-    return {
-        type: UPDATE_HERO,
-        payload: copy
-    };
+  return {
+    type: UPDATE_HERO,
+    payload: copy
+  };
 };
+
+export const cleanHero = () => {
+  return {
+    type: UPDATE_HERO,
+    payload: []
+  }
+}
