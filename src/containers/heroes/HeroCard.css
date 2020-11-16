@@ -1,16 +1,29 @@
 .container {
+    width: 100%;
+    display: flex;
+}
+
+.container-left {
+    width: 15%;
+}
+
+.container-center {
+    width: 70%;
     background-color: #f5eee3;
     padding-top: 40px; 
-    padding-bottom: 20px;  
     font-family: 'Mason Chronicles';
-    font-weight: bold
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.container-right {
+    width: 15%;
 }
 
 .HeroCard {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 50px;
 }
 
 .border-container {
@@ -70,7 +83,6 @@
     width: 301px;
     height: 60px;
     border-bottom: #AF8B52 solid 1px;
-    /*border-right: black solid 1px;*/
     display: flex;
 }
 
@@ -127,17 +139,23 @@
     display: flex;
 }
 
-.clear {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px;
-}
-.clear button {
-    height: 30px;
+button.clear {
+    height: 60px;
     width: 120px;
     position: fixed;
     bottom: 20px;
     right: 20px;
+    font-family: 'Mason Chronicles';
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    border: #AF8B52 solid 3px;
+    background-color: #f5eee3;
+}
+
+button.clear:active {
+    background-color: #AF8B52;
 }
 
 

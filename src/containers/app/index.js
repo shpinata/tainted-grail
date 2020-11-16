@@ -7,7 +7,7 @@ import './index.css';
 import logo from './logo.png';
 
 const App = () => (
-  <div>
+  <>
     <header>
       <div className="logo">
         <img src={logo} alt=""/>
@@ -30,7 +30,7 @@ const App = () => (
       <Route exact path="/locations" component={Locations} />
       <Route exact path="/statuses" component={Statuses} />
     </main>
-  </div>
+  </>
 )
 
 export default App

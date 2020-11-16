@@ -16,6 +16,11 @@ body {
   background-attachment: fixed;
 }
 
+body > div {
+  background-color: black;
+  background: radial-gradient(circle, rgb(0 0 0 / 84%) 30%, rgb(0 0 0 / 0.50) 100%);
+}
+
 button:disabled {
   opacity: 0.5;
 }
