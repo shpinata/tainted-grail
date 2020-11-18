@@ -32,8 +32,12 @@ export const updateHero = (index, name, value, heroes) => {
 };
 
 export const cleanHero = () => {
-  return {
-    type: UPDATE_HERO,
-    payload: []
+  const qestion = window.confirm("Вы уверены, что хотите полностью очистить лист?");
+  if (qestion) {
+    return {
+      type: UPDATE_HERO,
+      payload: []
+    } 
   }
+
 }

@@ -13,7 +13,7 @@ const Statuses = ({ checkboxes = [], updateStatus, ...props }) => {
         buttonNumber.push(
             <button 
                 key={i}
-                style={checkboxes[i] ? {background: 'green'} : {}}
+                style={checkboxes[i] ? {background: '#94846c'} : {}}
                 onClick={() => updateStatus(props.text, i, checkboxes)}
             >
                 {buttonContent}
