@@ -5,29 +5,6 @@ import Statuses from './Statuses';
 const SecondColumn = () => (
     <div className="statusesDiv-List">
         <Statuses 
-            text="Косуль" 
-            size="5" 
-            numbered
-        />
-        <Statuses 
-            text="Кочующий менгир" 
-            size="2" 
-            numbered
-        />
-        <Statuses text="Матереубийца" />
-        <Statuses text="Мир в боро" />
-        <Statuses text="Мунрингское дело" />
-        <Statuses text="Найденный монастырь" />
-        <Statuses text="Нарушитель согласий" />
-        <Statuses text="Наследие Фаэля" />
-        <Statuses 
-            text="Необъяснимая загадка" 
-            size="9" 
-            numbered
-        />
-        <Statuses text="Общие указания" />
-        <Statuses text="Остывший костёр" />
-        <Statuses 
             text="Павшие" 
             size="7" 
             numbered
@@ -82,6 +59,83 @@ const SecondColumn = () => (
         <Statuses 
             text="Последний урок" 
             size="5" 
+            numbered
+        />
+        <Statuses 
+            text="Последняя гавань" 
+            size="5" 
+            numbered
+        />
+        <Statuses text="Потусторонний зов" />
+        <Statuses text="Почётный гость" />
+        <Statuses 
+            text="Преемник Геррайнта" 
+            size="3" 
+            numbered
+        />
+        <Statuses text="Прибежище от бури" />
+        <Statuses text="Пропавшие пожитки" />
+        <Statuses text="Раскрытая тайна" />
+        <Statuses 
+            text="Ритуал в долине" 
+            size="2" 
+            numbered
+        />
+        <Statuses 
+            text="Рука помощи" 
+            size="6" 
+            numbered
+        />
+        <Statuses text="Секрет каменщика" />
+        <Statuses text="Секрет старой стали" />
+        <Statuses text="Следопыт" />
+        <Statuses 
+            text="Снадобье" 
+            size="4" 
+            numbered
+        />
+        <Statuses 
+            text="Союзники Авалона" 
+            size="5" 
+            numbered
+        />
+        <Statuses text="Спасённые богиней" />
+        <Statuses 
+            text="Стервятник" 
+            size="5" 
+            numbered
+        />
+        <Statuses 
+            text="Странные встречи" 
+            size="8" 
+            numbered
+        />
+        <Statuses 
+            text="Судьба экспедиции" 
+            size="9" 
+            numbered
+        />
+        <div className="additionalText">
+            Получив части 1-8, см. строфу 405 в книге секретов.
+        </div>
+        <Statuses 
+            text="Тайны леса" 
+            size="4" 
+            numbered
+        />
+        <Statuses 
+            text="Ценные встречи" 
+            size="5" 
+            numbered
+        />
+        <Statuses 
+            text="Черный котёл" 
+            size="3" 
+            numbered
+        />
+        <Statuses 
+            text="Эскалация" 
+            size="3" 
             numbered
         />
     </div>

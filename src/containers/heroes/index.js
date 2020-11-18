@@ -6,7 +6,6 @@ import { updateHero, cleanHero } from '../../modules/heroes';
 
 const Heroes = ({heroes, updateHero, cleanHero}) => (
   <div className="container">
-    <div className="container-left"/>
     <div className="container-center">
       <div className='HeroCard'>
         <HeroCard number="0" heroes={heroes} updateHero={updateHero}/>  
@@ -18,7 +17,6 @@ const Heroes = ({heroes, updateHero, cleanHero}) => (
       </div>     
       <button className="clear" onClick={cleanHero}>Очистить</button> 
     </div>
-    <div className="container-right"/>
   </div>
 )
 

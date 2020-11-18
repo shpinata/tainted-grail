@@ -90,6 +90,29 @@ const FirstColumn = () => {
                 numbered
             />
             <Statuses text="Конец пути" />
+            <Statuses 
+                text="Косуль" 
+                size="5" 
+                numbered
+            />
+            <Statuses 
+                text="Кочующий менгир" 
+                size="2" 
+                numbered
+            />
+            <Statuses text="Матереубийца" />
+            <Statuses text="Мир в боро" />
+            <Statuses text="Мунрингское дело" />
+            <Statuses text="Найденный монастырь" />
+            <Statuses text="Нарушитель согласий" />
+            <Statuses text="Наследие Фаэля" />
+            <Statuses 
+                text="Необъяснимая загадка" 
+                size="9" 
+                numbered
+            />
+            <Statuses text="Общие указания" />
+            <Statuses text="Остывший костёр" />
         </div>
     );
 }

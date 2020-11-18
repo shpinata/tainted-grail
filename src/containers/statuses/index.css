@@ -1,9 +1,13 @@
 .statusesDiv-List {
-    width: 33.33%;
+    width: 50%;
 }
+
 
 #statusesDiv {
     display: flex;
+    background-color: #f5eee3;
+    justify-content: center;
+    padding: 20px;
 }
 
 h1 {
@@ -12,10 +16,21 @@ h1 {
 }
 
 #firstDiv {
-    margin-bottom: 50px;
+    padding-bottom: 100px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-#firstDiv > div:nth-child(1) {
-    margin-top: 50px;
-    margin-bottom: 50px;
+@media(max-width: 768px) {
+    #statusesDiv {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    .statusesDiv-List {
+        width: 100%;
+    }
+    #firstDiv {
+        padding-bottom: 0;
+    }
 }
