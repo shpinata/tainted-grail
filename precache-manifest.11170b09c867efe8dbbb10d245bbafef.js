@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4232c8efb627fea7dd14",
+    "revision": "d79a9dd6ed6bd8997d9e",
     "url": "/tainted-grail/static/css/main.7c4705fa.chunk.css"
   },
   {
-    "revision": "4232c8efb627fea7dd14",
-    "url": "/tainted-grail/static/js/main.e7c36131.chunk.js"
+    "revision": "d79a9dd6ed6bd8997d9e",
+    "url": "/tainted-grail/static/js/main.4145e3bd.chunk.js"
   },
   {
     "revision": "7323b92ac1771c6e5071",
@@ -24,15 +24,15 @@ self.__precacheManifest = [
     "url": "/tainted-grail/static/media/logo.484c9603.png"
   },
   {
-    "revision": "420a00b9a7b3178e61123421146782e2",
-    "url": "/tainted-grail/static/media/MasonChronicles.420a00b9.ttf"
-  },
-  {
     "revision": "88b47ce232cf103fc49277ce29a028ad",
     "url": "/tainted-grail/static/media/MasonChronicles.88b47ce2.eot"
   },
   {
-    "revision": "cdb9b811421212c2343f0b93e70dd1e4",
+    "revision": "420a00b9a7b3178e61123421146782e2",
+    "url": "/tainted-grail/static/media/MasonChronicles.420a00b9.ttf"
+  },
+  {
+    "revision": "85b02bc8b0290bf994717f366511b4fd",
     "url": "/tainted-grail/index.html"
   }
 ];
