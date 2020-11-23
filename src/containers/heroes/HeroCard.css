@@ -46,27 +46,26 @@
     border-radius: 0 99%;
     left: -20px;
     top: -20px;
-  }
-  .border-top:after {
+}
+.border-top:after {
     border-radius: 99% 0;
     right: -20px;
     top: -20px;
-  }
-  .border-bottom:before {
+}
+.border-bottom:before {
     border-radius: 99% 0;
     left: -20px;
     bottom: -20px;
-  }
-  .border-bottom:after {
-    border-radius: 0 99%;
-    right: -20px;
-    bottom: -20px;
-  }
-  .border-center {
-    border-left: 3px solid #AF8B52;
-    border-right: 3px solid #AF8B52;
-  }
-
+}
+.border-bottom:after {
+border-radius: 0 99%;
+right: -20px;
+bottom: -20px;
+}
+.border-center {
+border-left: 3px solid #AF8B52;
+border-right: 3px solid #AF8B52;
+}
 
 .header-name {
     max-width: 301px;
@@ -156,5 +155,12 @@ button.clear:active {
     background-color: #AF8B52;
 }
 
-
+@media(max-width: 768px) {
+    .container-center {
+        margin-bottom: 0;
+        padding: 0;
+        padding-bottom: 100px;
+        overflow: hidden;
+    }
+}
 

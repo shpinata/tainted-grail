@@ -2,7 +2,6 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-
     align-items: flex-end;
     padding-right: 80px;
 }
@@ -10,12 +9,14 @@
 .left-column-item {
     display: flex;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .locationDiv {
     display: flex;
+    width: 33%;
+    justify-content: space-between;
     flex-direction: column;
-
 }
 
 .locationDiv > div:nth-child(1) {
@@ -35,15 +36,35 @@
     width: 150px;
 }
 
+.locationDiv div {
+    display: flex;
+    flex-direction: column;
+}
+
+.locationDiv input {
+    flex-grow: 1;
+}
+
 .headerDiv {
-    width: 100%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    margin-right: 30px;
+    padding-right: 30px;
 }
 
 .headerDiv div {
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
     height: 21px;
+}
+
+@media(max-width: 768px) {
+    .left-column {
+        width: 100%;
+        padding-right: 0;
+    }
 }

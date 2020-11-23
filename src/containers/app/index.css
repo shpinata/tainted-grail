@@ -33,6 +33,12 @@ header .links a {
     outline: none;
 }
 
+@media(max-width: 768px) {
+    header .links a {
+        font-size: 14px;
+    }
+}
+
 .active {
     border-bottom: solid 5px #f5eee3;
 }

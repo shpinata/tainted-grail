@@ -24,7 +24,7 @@ h1 {
 @media(max-width: 768px) {
     #statusesDiv {
         padding-top: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 100px;
         display: block;
     }
     .statusesDiv-List {
