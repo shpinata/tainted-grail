@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "502333cd3a3dfc199c18",
+    "revision": "f0dea73c40030d167937",
     "url": "/tainted-grail/static/css/main.bee8222b.chunk.css"
   },
   {
-    "revision": "502333cd3a3dfc199c18",
-    "url": "/tainted-grail/static/js/main.bcd6d5ff.chunk.js"
+    "revision": "f0dea73c40030d167937",
+    "url": "/tainted-grail/static/js/main.5c66efca.chunk.js"
   },
   {
     "revision": "7323b92ac1771c6e5071",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/tainted-grail/static/media/MasonChronicles.420a00b9.ttf"
   },
   {
-    "revision": "2c1153a222727ff5ae27327fc123d64d",
+    "revision": "9b9c40a36a3a95ab6591e20665b6daf1",
     "url": "/tainted-grail/index.html"
   }
 ];
