@@ -64,14 +64,8 @@ export default (state = initialState, action) => {
         ...state,
         playerNotes: action.payload
       };
-<<<<<<< HEAD
     case CLEAN_LOCATIONS: 
       return initialState;
-=======
-    case CLEAN_LOCATIONS: {
-      return initialState;
-      };
->>>>>>> 98acb6b2b5bc54943e93c8fc854d27bb01cf5650
     default: // если ни один из экшенов не подошел, то оставляем старое состояние
       return state;
   }
