@@ -5,12 +5,15 @@ import RightColumn from './RightColumn';
 
 const Locations = () => (
   <div className="locations-container">
-    <div>
-      <h1>ЛОКАЦИИ</h1>
-    </div>
-    <div>
-      <LeftColumn />  
-      <RightColumn />  
+    <div className="list">
+      <div>
+        <LeftColumn />  
+        <RightColumn />
+      </div>
+      <div>
+        <h1>Заметки</h1>
+        <textarea/>        
+      </div>
     </div>
   </div>
 );

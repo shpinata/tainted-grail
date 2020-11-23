@@ -16,7 +16,7 @@ const Location = ({values, onChange, ...props}) => {
     return (
         <div className="locationDiv">
             <div>{props.name}</div>
-            {boxs}            
+            <div>{boxs}</div>           
         </div>
     );
 }

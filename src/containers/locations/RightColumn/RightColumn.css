@@ -1,8 +1,22 @@
 .right-column {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.right-column > div:nth-child(1) {
+    padding-bottom: 20px;
+}
+
+.delet-locations-columns {
     display: flex;
 }
 
 .column-item input {
     width: 40%;
+}
+
+.location-update {
+    text-align: center;
 }

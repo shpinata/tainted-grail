@@ -1,19 +1,35 @@
 .locations-container {
-    width: 100%;
+    padding-bottom: 100px;
+    max-width: 1050px;
+    margin: auto;
 }
 
-.locations-container > div:nth-child(1) {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.list {
+    background-color: #f5eee3;
+    padding: 20px;
+    padding-top: 50px;
 }
 
-.locations-container > div:nth-child(2) {
-    display: flex;
-}
-
-h1 {
+.list > div:nth-child(1) {
     display: flex;
     justify-content: center;
 }
+
+.list > div:nth-child(2) {
+    text-align: center;
+    font-family: 'Mason Chronicles';
+}
+
+.list > div:nth-child(2) textarea {
+    text-align: center;
+    width: 95%;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    min-height: 200px;
+}
+
 
 

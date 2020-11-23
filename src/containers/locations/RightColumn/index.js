@@ -7,9 +7,13 @@ import { updateRemovedLocations } from '../../../modules/locations'; // функ
 // props и в нем есть props.removedLocations, поэтому делаем деструктуризацию props
 const RightColumn = ({ removedLocations, onChange }) => {
   return (
-    <div className="right-column">
-        <Column removedLocations={removedLocations} onChange={onChange} />
-    </div>
+      <div className="right-column">
+        <div>Удаленные локации</div>
+        <div className="delet-locations-columns">
+          <Column removedLocations={removedLocations} onChange={onChange} />
+        </div>
+      </div>
+
   );
 }
 

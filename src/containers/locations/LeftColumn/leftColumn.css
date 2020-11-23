@@ -1,11 +1,13 @@
 .left-column {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
+
+    align-items: flex-end;
+    padding-right: 80px;
 }
 
 .left-column-item {
-    width: 100%;
     display: flex;
     margin-bottom: 50px;
 }
@@ -18,11 +20,14 @@
 
 .locationDiv > div:nth-child(1) {
     display: flex;  
-    margin-bottom: 15px;  
+    padding-bottom: 20px;
+}
+.locationDiv > div:nth-child(2) input {
+    margin-top: 3px;
+    margin-right: 3px;
 }
 
 .inputDiv {
-
     display: flex;
 }
 
@@ -31,7 +36,7 @@
 }
 
 .headerDiv {
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
