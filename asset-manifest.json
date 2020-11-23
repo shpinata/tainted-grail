@@ -1,5 +1,5 @@
 {
-  "main.css": "/tainted-grail/static/css/main.08384d5b.chunk.css",
+  "main.css": "/tainted-grail/static/css/main.8683335f.chunk.css",
   "main.js": "/tainted-grail/static/js/main.bcd6d5ff.chunk.js",
   "main.js.map": "/tainted-grail/static/js/main.bcd6d5ff.chunk.js.map",
   "runtime~main.js": "/tainted-grail/static/js/runtime~main.719c1334.js",
@@ -8,10 +8,10 @@
   "static/js/2.b4133869.chunk.js": "/tainted-grail/static/js/2.b4133869.chunk.js",
   "static/js/2.b4133869.chunk.js.map": "/tainted-grail/static/js/2.b4133869.chunk.js.map",
   "index.html": "/tainted-grail/index.html",
-  "precache-manifest.cec1d2c4178feb8e7ff5082b9c602ccb.js": "/tainted-grail/precache-manifest.cec1d2c4178feb8e7ff5082b9c602ccb.js",
+  "precache-manifest.62f09e2fe1c73284c38f5d17855c3a3f.js": "/tainted-grail/precache-manifest.62f09e2fe1c73284c38f5d17855c3a3f.js",
   "service-worker.js": "/tainted-grail/service-worker.js",
   "static/css/2.6d6959bf.chunk.css.map": "/tainted-grail/static/css/2.6d6959bf.chunk.css.map",
-  "static/css/main.08384d5b.chunk.css.map": "/tainted-grail/static/css/main.08384d5b.chunk.css.map",
+  "static/css/main.8683335f.chunk.css.map": "/tainted-grail/static/css/main.8683335f.chunk.css.map",
   "static/media/index.css": "/tainted-grail/static/media/MasonChronicles.88b47ce2.eot",
   "static/media/logo.png": "/tainted-grail/static/media/logo.484c9603.png"
 }
