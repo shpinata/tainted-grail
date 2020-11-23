@@ -78,11 +78,11 @@ export const updateRemovedLocations = (index, location, removedLocations) => { /
     copy[index] = {};
   } 
   
-  if (location.new){ // если задали правую часть
+  if (location.new || (location.new === "")){ // если задали правую часть
     copy[index].new = location.new;
   }
 
-  if (location.removed){ // если задали левую часть
+  if (location.removed || (location.removed === "")){ // если задали левую часть
     copy[index].removed = location.removed;
   }
 

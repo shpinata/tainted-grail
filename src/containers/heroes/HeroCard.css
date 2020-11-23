@@ -58,13 +58,13 @@
     bottom: -20px;
 }
 .border-bottom:after {
-border-radius: 0 99%;
-right: -20px;
-bottom: -20px;
+    border-radius: 0 99%;
+    right: -20px;
+    bottom: -20px;
 }
 .border-center {
-border-left: 3px solid #AF8B52;
-border-right: 3px solid #AF8B52;
+    border-left: 3px solid #AF8B52;
+    border-right: 3px solid #AF8B52;
 }
 
 .header-name {
@@ -119,6 +119,7 @@ border-right: 3px solid #AF8B52;
     width: 50%;
     border: #AF8B52 solid 1px;
     border-radius: 3px;
+    text-align: center;
 }
 
 .counter {
@@ -130,6 +131,7 @@ border-right: 3px solid #AF8B52;
     width: 50%;
     border: #AF8B52 solid 1px;
     border-radius: 3px;
+    text-align: center;
 }
 
 .characteristics {

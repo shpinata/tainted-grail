@@ -5,6 +5,7 @@ const ResourcesInput = ({heroes, updateHero, ...props}) => {
     return(
         <div className="resource-div">
             <input
+                type="number"
                 value={(heroes[props.number] && heroes[props.number][text]) || ""}
                 onChange={(e) => {
                     const newValue = e.target.value;

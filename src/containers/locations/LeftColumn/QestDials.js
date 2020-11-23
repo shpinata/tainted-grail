@@ -6,8 +6,8 @@ import { updateQestDialsLocations, updateQestDialsCounters } from '../../../modu
 const QestDials = ({qestDialsLocations, qestDialsCounters, onChangeLocations, onChangeCounters}) => (
     <div className="left-column-item">
         <div className="headerDiv">
-            <div>Счетчик миссии 1</div>
-            <div>Счетчик миссии 2</div>
+            <div>Миссия 1</div>
+            <div>Миссия 2</div>
         </div>
         <Location 
             name="Локация" 

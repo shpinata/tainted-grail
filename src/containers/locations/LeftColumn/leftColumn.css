@@ -26,6 +26,9 @@
 .locationDiv > div:nth-child(2) input {
     margin-top: 3px;
     margin-right: 3px;
+    text-align: center;
+    border: #AF8B52 solid 1px;
+    border-radius: 3px;
 }
 
 .inputDiv {

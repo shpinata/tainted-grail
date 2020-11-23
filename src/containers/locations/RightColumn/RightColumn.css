@@ -15,6 +15,9 @@
 
 .column-item input {
     width: 40%;
+    text-align: center;
+    border: #AF8B52 solid 1px;
+    border-radius: 3px;
 }
 
 .location-update {

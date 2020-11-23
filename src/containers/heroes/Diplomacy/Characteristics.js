@@ -6,6 +6,7 @@ const Characteristics = ({heroes, updateHero, ...props}) => {
         <div className="diplomacy-characteristic">
             <div><img src={props.img} alt=""/></div>
             <input
+                type="number"
                 value={(heroes[props.number] && heroes[props.number][diplomacyKey]) || ""}
                 onChange={(e) => {
                     const newValue = e.target.value;

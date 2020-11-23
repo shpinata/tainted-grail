@@ -8,6 +8,7 @@ const Column = ({ onChange, removedLocations }) => {
         const newLocation = removedLocations[i] && removedLocations[i].new;
         boxs.push(<div className="location-update" key={i}>
             <input 
+                type="number"
                 value={removed || ''}
                 onChange={(e) => {
                     const removed = e.target.value;
@@ -16,6 +17,7 @@ const Column = ({ onChange, removedLocations }) => {
             />
             {" → "}
             <input 
+                type="number"
                 value={newLocation || ''}
                 onChange={(e) => {
                     const newLocation = e.target.value;

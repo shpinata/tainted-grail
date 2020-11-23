@@ -5,6 +5,7 @@ const Characteristics = ({heroes, updateHero, ...props}) => {
     return (
         <div className="parameters-characteristic">
             <input
+                type="number"
                 value={(heroes[props.number] && heroes[props.number][parametersKey]) || ""}
                 onChange={(e) => {
                     const newValue = e.target.value;

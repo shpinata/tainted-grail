@@ -9,7 +9,12 @@ import { PersistGate } from 'redux-persist/integration/react'
 import 'sanitize.css/sanitize.css'
 import './index.css'
 
-const target = document.querySelector('#root')
+const target = document.querySelector('#root');
+const body = document.querySelector('body');
+
+if (process.env.NODE_ENV === 'production'){
+  body.classList.add('prod');
+}
 
 render(
   <Provider store={store}>

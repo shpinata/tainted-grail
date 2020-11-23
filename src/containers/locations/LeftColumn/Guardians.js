@@ -18,6 +18,7 @@ const Guardians = ({guardiansLocations, guardiansCounters, onChangeLocations, on
         <Location 
             name="Тип стража" 
             number="2"
+            type="text"
             values = {guardiansCounters}
             onChange = {onChangeCounters}
         />

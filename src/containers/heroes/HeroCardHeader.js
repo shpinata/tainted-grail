@@ -20,6 +20,7 @@ const HeroCardHeader = ({heroes, updateHero, ...props}) => {
                 <div className="location">
                     <div>Локация:</div>
                     <input
+                        type="number"
                         value={(heroes[props.number] && heroes[props.number].location) || ""}
                         onChange={(e) => {
                             const newValue = e.target.value;
@@ -30,6 +31,7 @@ const HeroCardHeader = ({heroes, updateHero, ...props}) => {
                 <div className="counter">
                     <div>Счётчик:</div>
                     <input
+                        type="number"
                         value={(heroes[props.number] && heroes[props.number].counter) || ""}
                         onChange={(e) => {
                             const newValue = e.target.value;
