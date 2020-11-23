@@ -5,6 +5,8 @@ export const UPDATE_QESTDIALS_LOCATIONS = 'locations/UPDATE_QESTDIALS_LOCATIONS'
 export const UPDATE_QESTDIALS_COUNTERS = 'locations/UPDATE_QESTDIALS_COUNTERS';
 export const UPDATE_GUARDIANS_LOCATIONS = 'locations/UPDATE_GUARDIANS_LOCATIONS';
 export const UPDATE_GUARDIANS_COUNTERS = 'locations/UPDATE_GUARDIANS_COUNTERS';
+export const UPDATE_PLAYER_NOTES = 'locations/UPDATE_PLAYER_NOTES';
+export const CLEAN_LOCATIONS = 'locations/CLEAN_LOCATIONS';
 
 const initialState = { // это начальное состояние
   removedLocations: [],
@@ -14,6 +16,7 @@ const initialState = { // это начальное состояние
   qestDialsCounters: [],
   guardiansLocations: [],
   guardiansCounters: [],
+  playerNotes:''
 }
 // Это редюсер
 export default (state = initialState, action) => {
@@ -56,7 +59,14 @@ export default (state = initialState, action) => {
         ...state,
         guardiansCounters: action.payload
       };
-
+    case UPDATE_PLAYER_NOTES:
+      return {
+        ...state,
+        playerNotes: action.payload
+      };
+    case CLEAN_LOCATIONS: {
+      return initialState;
+      };
     default: // если ни один из экшенов не подошел, то оставляем старое состояние
       return state;
   }
@@ -133,3 +143,19 @@ export const updateGuardiansCounters = (index, number, guardiansCounters) => {
     payload: copy
   };
 };
+
+export const updatePlayerNotes = (playerNotes) => {
+  return {
+    type: UPDATE_PLAYER_NOTES,
+    payload: playerNotes
+  };
+};
+
+export const cleanLocations = () => {
+  const qestion = window.confirm("Вы уверены, что хотите полностью очистить лист?");
+  if (qestion) {
+    return {
+      type: CLEAN_LOCATIONS
+    } 
+  }
+}

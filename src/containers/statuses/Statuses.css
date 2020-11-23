@@ -14,8 +14,8 @@
 
 .statuses-Item-CheckboxDiv {
     width: 45%;
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
+    margin-bottom: 10px;
 }
 
 .additionalText {
