@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/tainted-grail/static/media/logo.484c9603.png"
   },
   {
-    "revision": "88b47ce232cf103fc49277ce29a028ad",
-    "url": "/tainted-grail/static/media/MasonChronicles.88b47ce2.eot"
-  },
-  {
     "revision": "420a00b9a7b3178e61123421146782e2",
     "url": "/tainted-grail/static/media/MasonChronicles.420a00b9.ttf"
+  },
+  {
+    "revision": "88b47ce232cf103fc49277ce29a028ad",
+    "url": "/tainted-grail/static/media/MasonChronicles.88b47ce2.eot"
   },
   {
     "revision": "f80d9468ff7c8c29f806bc5febc1c4a9",
