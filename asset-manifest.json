@@ -1,17 +1,17 @@
 {
-  "main.css": "/tainted-grail/static/css/main.dc57a88a.chunk.css",
-  "main.js": "/tainted-grail/static/js/main.a8506856.chunk.js",
-  "main.js.map": "/tainted-grail/static/js/main.a8506856.chunk.js.map",
+  "main.css": "/tainted-grail/static/css/main.c05e1339.chunk.css",
+  "main.js": "/tainted-grail/static/js/main.967bd3d8.chunk.js",
+  "main.js.map": "/tainted-grail/static/js/main.967bd3d8.chunk.js.map",
   "runtime~main.js": "/tainted-grail/static/js/runtime~main.719c1334.js",
   "runtime~main.js.map": "/tainted-grail/static/js/runtime~main.719c1334.js.map",
   "static/css/2.6d6959bf.chunk.css": "/tainted-grail/static/css/2.6d6959bf.chunk.css",
   "static/js/2.13f72936.chunk.js": "/tainted-grail/static/js/2.13f72936.chunk.js",
   "static/js/2.13f72936.chunk.js.map": "/tainted-grail/static/js/2.13f72936.chunk.js.map",
   "index.html": "/tainted-grail/index.html",
-  "precache-manifest.9395e2e7c6f2bf3db3d2789f381227e1.js": "/tainted-grail/precache-manifest.9395e2e7c6f2bf3db3d2789f381227e1.js",
+  "precache-manifest.972f5e543d572fe91accb8136732ccad.js": "/tainted-grail/precache-manifest.972f5e543d572fe91accb8136732ccad.js",
   "service-worker.js": "/tainted-grail/service-worker.js",
   "static/css/2.6d6959bf.chunk.css.map": "/tainted-grail/static/css/2.6d6959bf.chunk.css.map",
-  "static/css/main.dc57a88a.chunk.css.map": "/tainted-grail/static/css/main.dc57a88a.chunk.css.map",
+  "static/css/main.c05e1339.chunk.css.map": "/tainted-grail/static/css/main.c05e1339.chunk.css.map",
   "static/media/index.css": "/tainted-grail/static/media/MasonChronicles.88b47ce2.eot",
   "static/media/logo.png": "/tainted-grail/static/media/logo.484c9603.png"
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tainted-grail/precache-manifest.9395e2e7c6f2bf3db3d2789f381227e1.js"
+  "/tainted-grail/precache-manifest.972f5e543d572fe91accb8136732ccad.js"
 );
 
 workbox.clientsClaim();
