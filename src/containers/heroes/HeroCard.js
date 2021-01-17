@@ -4,6 +4,7 @@ import Battle from './Battle'
 import Diplomacy from './Diplomacy';
 import Parameters from './Parameters';
 import Resources from './Resources';
+import { NavLink } from 'react-router-dom';
 
 const HeroCard = ({heroes, updateHero, ...props}) => (
     <div className="border-container">
@@ -38,7 +39,15 @@ const HeroCard = ({heroes, updateHero, ...props}) => (
             />    
         </div>
         <div className="border-bottom"/>
+        <div className="DivButtonCardDeck"> 
+            {heroes[props.number] && heroes[props.number].name && (
+                <NavLink exact to={`/card-deck/${props.number}`}>
+                    <button>Колода</button>   
+                </NavLink>  
+            )} 
+        </div>
     </div>
 );
+
 
 export default HeroCard;

@@ -5,6 +5,7 @@ import Locations from '../locations';
 import Statuses from '../statuses';
 import './index.css';
 import logo from './logo.png';
+import CardDeck from '../heroes/CardDeck';
 
 const App = () => (
   <HashRouter basename="/">
@@ -29,6 +30,7 @@ const App = () => (
         <Route exact path="/" component={Heroes} />
         <Route exact path="/locations" component={Locations} />
         <Route exact path="/statuses" component={Statuses} />
+        <Route exact path="/card-deck/:number" component={CardDeck} />
     </main>
   </HashRouter>
 )

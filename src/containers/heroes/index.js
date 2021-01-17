@@ -8,12 +8,28 @@ const Heroes = ({heroes, updateHero, cleanHero}) => (
   <div className="container">
     <div className="container-center">
       <div className='HeroCard'>
-        <HeroCard number="0" heroes={heroes} updateHero={updateHero}/>  
-        <HeroCard number="1" heroes={heroes} updateHero={updateHero}/>        
+        <HeroCard 
+          number="0" 
+          heroes={heroes} 
+          updateHero={updateHero} 
+        />  
+        <HeroCard 
+          number="1" 
+          heroes={heroes} 
+          updateHero={updateHero}
+        />        
       </div>  
       <div className='HeroCard'>
-        <HeroCard number="2" heroes={heroes} updateHero={updateHero}/>  
-        <HeroCard number="3" heroes={heroes} updateHero={updateHero}/>       
+        <HeroCard 
+          number="2" 
+          heroes={heroes} 
+          updateHero={updateHero}
+        />  
+        <HeroCard 
+          number="3" 
+          heroes={heroes} 
+          updateHero={updateHero}
+        />       
       </div>     
       <button className="clear" onClick={cleanHero}>Очистить</button> 
     </div>
@@ -21,7 +37,7 @@ const Heroes = ({heroes, updateHero, cleanHero}) => (
 )
 
 const mapStateToProps = ({ hero }) => ({ 
-  heroes: hero.heroes,
+  heroes: hero.heroes
 })
 
 const mapDispatchToProps = {
